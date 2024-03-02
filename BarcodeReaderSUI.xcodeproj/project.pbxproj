@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C076B62A2B93025A00993FE2 /* BarcodeReaderSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076B6292B93025A00993FE2 /* BarcodeReaderSUIApp.swift */; };
-		C076B62C2B93025A00993FE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076B62B2B93025A00993FE2 /* ContentView.swift */; };
 		C076B62E2B93025B00993FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C076B62D2B93025B00993FE2 /* Assets.xcassets */; };
 		C076B6312B93025B00993FE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C076B6302B93025B00993FE2 /* Preview Assets.xcassets */; };
+		C076B6382B93071D00993FE2 /* BarcodeReaderSUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076B6372B93071D00993FE2 /* BarcodeReaderSUIViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C076B6262B93025A00993FE2 /* BarcodeReaderSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeReaderSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C076B6292B93025A00993FE2 /* BarcodeReaderSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeReaderSUIApp.swift; sourceTree = "<group>"; };
-		C076B62B2B93025A00993FE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C076B62D2B93025B00993FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C076B6302B93025B00993FE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C076B6372B93071D00993FE2 /* BarcodeReaderSUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeReaderSUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,7 @@
 		C076B6282B93025A00993FE2 /* BarcodeReaderSUI */ = {
 			isa = PBXGroup;
 			children = (
-				C076B6292B93025A00993FE2 /* BarcodeReaderSUIApp.swift */,
-				C076B62B2B93025A00993FE2 /* ContentView.swift */,
+				C076B6392B93073700993FE2 /* BarcodeReaderSUI */,
 				C076B62D2B93025B00993FE2 /* Assets.xcassets */,
 				C076B62F2B93025B00993FE2 /* Preview Content */,
 			);
@@ -65,6 +64,15 @@
 				C076B6302B93025B00993FE2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C076B6392B93073700993FE2 /* BarcodeReaderSUI */ = {
+			isa = PBXGroup;
+			children = (
+				C076B6292B93025A00993FE2 /* BarcodeReaderSUIApp.swift */,
+				C076B6372B93071D00993FE2 /* BarcodeReaderSUIViewModel.swift */,
+			);
+			path = BarcodeReaderSUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C076B62C2B93025A00993FE2 /* ContentView.swift in Sources */,
 				C076B62A2B93025A00993FE2 /* BarcodeReaderSUIApp.swift in Sources */,
+				C076B6382B93071D00993FE2 /* BarcodeReaderSUIViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +281,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +311,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
